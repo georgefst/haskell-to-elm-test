@@ -1,0 +1,79 @@
+cradle:
+  cabal:
+    - path: "./src"
+      component: "lib:backend"
+
+    - path: "./app/Main.hs"
+      component: "backend:exe:backend-exe"
+
+    - path: "./app/Paths_backend.hs"
+      component: "backend:exe:backend-exe"
+
+    - path: "./elm-generator/Main.hs"
+      component: "backend:exe:elm-generator"
+
+    - path: "./elm-generator/Paths_backend.hs"
+      component: "backend:exe:elm-generator"
+
+    - path: "./test"
+      component: "backend:test:backend-test"
+
+    - path: "../../elm-syntax/src"
+      component: "lib:elm-syntax"
+
+    - path: "../../elm-syntax/test"
+      component: "elm-syntax:test:elm-syntax-test"
+
+    - path: "../../haskell-to-elm/src"
+      component: "lib:haskell-to-elm"
+
+    - path: "../../haskell-to-elm/examples/DerivingVia.hs"
+      component: "haskell-to-elm:exe:deriving-via-example"
+
+    - path: "../../haskell-to-elm/examples/Parameterised.hs"
+      component: "haskell-to-elm:exe:deriving-via-example"
+
+    - path: "../../haskell-to-elm/examples/User.hs"
+      component: "haskell-to-elm:exe:deriving-via-example"
+
+    - path: "../../haskell-to-elm/examples/Paths_haskell_to_elm.hs"
+      component: "haskell-to-elm:exe:deriving-via-example"
+
+    - path: "../../haskell-to-elm/examples/Parameterised.hs"
+      component: "haskell-to-elm:exe:parameterised-example"
+
+    - path: "../../haskell-to-elm/examples/DerivingVia.hs"
+      component: "haskell-to-elm:exe:parameterised-example"
+
+    - path: "../../haskell-to-elm/examples/User.hs"
+      component: "haskell-to-elm:exe:parameterised-example"
+
+    - path: "../../haskell-to-elm/examples/Paths_haskell_to_elm.hs"
+      component: "haskell-to-elm:exe:parameterised-example"
+
+    - path: "../../haskell-to-elm/examples/User.hs"
+      component: "haskell-to-elm:exe:user-example"
+
+    - path: "../../haskell-to-elm/examples/DerivingVia.hs"
+      component: "haskell-to-elm:exe:user-example"
+
+    - path: "../../haskell-to-elm/examples/Parameterised.hs"
+      component: "haskell-to-elm:exe:user-example"
+
+    - path: "../../haskell-to-elm/examples/Paths_haskell_to_elm.hs"
+      component: "haskell-to-elm:exe:user-example"
+
+    - path: "../../haskell-to-elm/test"
+      component: "haskell-to-elm:test:haskell-to-elm-test"
+
+    - path: "../../servant-to-elm/src"
+      component: "lib:servant-to-elm"
+
+    - path: "../../servant-to-elm/examples/UserAPI.hs"
+      component: "servant-to-elm:exe:user-example"
+
+    - path: "../../servant-to-elm/examples/Paths_servant_to_elm.hs"
+      component: "servant-to-elm:exe:user-example"
+
+    - path: "../../servant-to-elm/test"
+      component: "servant-to-elm:test:servant-to-elm-test"

@@ -1,7 +1,7 @@
 .PHONY: run-backend
 run-backend: cabal-setup
 	cd backend \
-	  && cabal run backend-exe
+	  && cabal run -w ghc-8.6.5 backend-exe
 
 .PHONY: run-frontend
 run-frontend: generate-client-library frontend/node_modules
@@ -12,7 +12,7 @@ run-frontend: generate-client-library frontend/node_modules
 .PHONY: generate-client-library
 generate-client-library: cabal-setup
 	cd backend \
-	  && cabal run elm-generator -- ../frontend/generated_src/
+	  && cabal run -w ghc-8.6.5 elm-generator -- ../frontend/generated_src/
 
 frontend/node_modules: frontend/package.json frontend/yarn.lock
 	cd frontend \
